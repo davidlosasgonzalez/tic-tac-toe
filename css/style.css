@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 30px;
+    --light-blue: #80c8ff;
+    --violet: #4f289d;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    color: var(--light-blue);
+    background: url('../pics/background-image.jpg') no-repeat center center
+        fixed;
+    background-size: cover;
+}
+
+div.board {
+    margin: 1.5rem auto;
+    display: table;
+    border-collapse: collapse;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.28);
+    color: var(--violet);
+}
+
+div.first-row,
+div.second-row,
+div.third-row {
+    display: table-row;
+    font-size: 3.5rem;
+}
+
+div.first-row > div,
+div.second-row > div,
+div.third-row > div {
+    display: table-cell;
+    height: 150px;
+    width: 150px;
+    border: 1px solid var(--violet);
+    box-sizing: border-box;
+    background-color: rgba(240, 240, 240, 0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+div.first-row > div:active,
+div.second-row > div:active,
+div.third-row > div:active {
+    background-color: var(--light-blue);
+}
+
+div.reset:active {
+    color: var(--violet);
+}
